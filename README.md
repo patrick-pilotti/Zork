@@ -1,9 +1,9 @@
-# Idee
+<h1>Idee</h1>
 Dieses Spiel soll ein Rogue-like dungeon crawler werden.
 Man soll folgendes machen können:
 <details>
 <summary><h2>Logic</h2></summary>
-  <h2>Items</h2>
+  <h3>Items</h3>
   <ul>
     <li>
       - [ ] Pick up an Item 
@@ -23,7 +23,7 @@ Man soll folgendes machen können:
 
   </ul>
 
-  <h2>Rooms</h2>
+  <h3>Rooms</h3>
   <ul>
     <li>
       - [ ] Inspect the current room 
