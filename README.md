@@ -3,35 +3,36 @@ Dieses Spiel soll ein Rogue-like dungeon crawler werden.
 Man soll folgendes machen können:
 <details>
 <summary><h2>Logic</h2></summary>
+  <h2>Items</h2>
   <ul>
     <li>
-      Pick up an Item 
+      - [ ] Pick up an Item 
     </li>
     <li>
-      Drop an Item
+      - [ ] Drop an Item
     </li>
     <li>
-      List all Items in Inventory
+      - [ ] List all Items in Inventory
     </li>
     <li>
-      Drop all Items
+      - [ ] Drop all Items
     </li>
     <li>
-      Inspect an Item
+      - [ ] Inspect an Item
     </li>
 
   </ul>
-  <hr>
-  <summary><h2>Rooms</h2></summary>
+
+  <h2>Rooms</h2>
   <ul>
     <li>
-      Inspect the current room 
+      - [ ] Inspect the current room 
     </li>
     <li>
-      Inspect the next possible rooms
+      - [ ] Inspect the next possible rooms
     </li>
     <li>
-      Get a view of all rooms
+      - [ ] Get a view of all rooms
     </li>
   </ul>
   
