@@ -3,7 +3,7 @@ echo started file
 cd ..
 
 :START
-echo LAST COMMIT MESSAGE:
+echo LAST COMMAND:
 echo ----------------------
 for /f "usebackq tokens=*" %%i in ("custom-git\commitmsg.txt") do (
     set "latest=%%i"
