@@ -2,3 +2,4 @@ added custom git
 push 
 CHANGED commit.bat 
 push 
+. 
