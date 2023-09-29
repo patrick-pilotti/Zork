@@ -3,21 +3,24 @@ package ch.bbw.zork;
 public class Item {
     private String name;
     private String description;
-    private float damage;
+    private double damage;
     private int durability;
-    private float weight;
+    private double weight;
     private String[] perks;
 
     public Item() {
     }
 
-    public Item(String name, String description, float damage, int durability, float weight, String[] perks) {
+    public Item(String name, String description, double damage, int durability, double weight, String[] perks) {
         this.name = name;
         this.description = description;
         this.damage = damage;
         this.durability = durability;
         this.weight = weight;
         this.perks = perks;
+    }
+
+    public Item(String fists, String desc, int damage, Integer o, int weight, Object perks) {
     }
 
     public String getName() {
@@ -36,11 +39,11 @@ public class Item {
         this.description = description;
     }
 
-    public float getDamage() {
+    public double getDamage() {
         return damage;
     }
 
-    public void setDamage(float damage) {
+    public void setDamage(double damage) {
         this.damage = damage;
     }
 
@@ -52,11 +55,11 @@ public class Item {
         this.durability = durability;
     }
 
-    public float getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public void setWeight(float weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
