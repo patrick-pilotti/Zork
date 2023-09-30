@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Zork.iml" filepath="$PROJECT_DIR$/.idea/Zork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zork-Start.iml" filepath="$PROJECT_DIR$/Zork-Start.iml" />
     </modules>
   </component>
 </project>
