@@ -52,11 +52,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696077108828</updated>
-      <workItem from="1696077110349" duration="955000" />
+      <workItem from="1696077110349" duration="1282000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=".idea restored" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
