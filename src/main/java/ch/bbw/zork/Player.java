@@ -47,7 +47,7 @@ public class Player {
         this.inventory = inventory;
     }
 
-    public Player(int hp, String name, int previousRoomId, int currentRoomId, String[] inventory) {
+    public Player(int hp, String name, int previousRoomId, Integer currentRoomId, String[] inventory) {
         this.hp = hp;
         this.name = name;
         this.previousRoomId = previousRoomId;
