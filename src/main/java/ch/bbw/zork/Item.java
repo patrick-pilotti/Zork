@@ -9,10 +9,10 @@ public class Item {
     private String[] perks;
     private int hp;
 
-    public Item(){
+    public Item() {
     }
 
-    public Item(String name, String description, double damage, int durability, double weight, String[] perks, int hp){
+    public Item(String name, String description, double damage, int durability, double weight, String[] perks, int hp) {
         this.name = name;
         this.description = description;
         this.damage = damage;
@@ -22,67 +22,66 @@ public class Item {
         this.hp = hp;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public Item setName(String name){
+    public Item setName(String name) {
         this.name = name;
         return this;
     }
 
-    public String getDescription(){
+    public String getDescription() {
         return description;
     }
 
-    public Item setDescription(String description){
+    public Item setDescription(String description) {
         this.description = description;
         return this;
     }
 
-    public double getDamage(){
+    public double getDamage() {
         return damage;
     }
 
-    public Item setDamage(double damage){
+    public Item setDamage(double damage) {
         this.damage = damage;
         return this;
     }
 
-    public int getDurability(){
+    public int getDurability() {
         return durability;
     }
 
-    public Item setDurability(int durability){
+    public Item setDurability(int durability) {
         this.durability = durability;
         return this;
     }
 
-    public double getWeight(){
+    public double getWeight() {
         return weight;
     }
 
-    public Item setWeight(double weight){
+    public Item setWeight(double weight) {
         this.weight = weight;
         return this;
     }
 
-    public String[] getPerks(){
+    public String[] getPerks() {
         return perks;
     }
 
-    public Item setPerks(String[] perks){
+    public Item setPerks(String[] perks) {
         this.perks = perks;
         return this;
     }
 
-    public int getHp(){
+    public int getHp() {
         return hp;
     }
 
-    public Item setHp(int hp){
+    public Item setHp(int hp) {
         this.hp = hp;
         return this;
     }
-
 }

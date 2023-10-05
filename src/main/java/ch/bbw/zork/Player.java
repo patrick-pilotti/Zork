@@ -1,11 +1,13 @@
 package ch.bbw.zork;
 
+import java.util.Arrays;
+
 public class Player {
     private int hp;
     private String name;
     private int previousRoomId;
     private int currentRoomId;
-    private String[] inventory;
+    private Item[] inventory;
 
     public int getHp() {
         return hp;
@@ -39,15 +41,26 @@ public class Player {
         this.currentRoomId = currentRoomId;
     }
 
-    public String[] getInventory() {
+    public Item[] getInventory() {
         return inventory;
     }
 
-    public void setInventory(String[] inventory) {
-        this.inventory = inventory;
+    public void addToInventory(Item item) {
+        if (inventory == null) {
+            inventory = new Item[]{item};
+        } else {
+            // Check if the item is already in the inventory
+            if (!Arrays.asList(inventory).contains(item)) {
+                // Create a new array with one more slot for the new item
+                Item[] newInventory = Arrays.copyOf(inventory, inventory.length + 1);
+                newInventory[inventory.length] = item;
+                inventory = newInventory;
+            }
+        }
     }
 
-    public Player(int hp, String name, int previousRoomId, Integer currentRoomId, String[] inventory) {
+
+    public Player(int hp, String name, int previousRoomId, int currentRoomId, Item[] inventory) {
         this.hp = hp;
         this.name = name;
         this.previousRoomId = previousRoomId;
