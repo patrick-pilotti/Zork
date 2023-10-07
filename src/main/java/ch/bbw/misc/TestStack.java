@@ -1,4 +1,4 @@
-package ch.bbw.diverses;
+package ch.bbw.misc;
 
 import java.util.Stack;
 
