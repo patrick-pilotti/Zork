@@ -67,4 +67,25 @@ public class Player {
         this.currentRoomId = currentRoomId;
         this.inventory = inventory;
     }
+
+
+    public Item findItemByName(String itemName) {
+        if (inventory != null) {
+            for (Item item : inventory) {
+                if (item.getName().equalsIgnoreCase(itemName)) {
+                    return item; // Return the item if found by name (case-insensitive)
+                }
+            }
+        }
+        return null; // Return null if the item is not found
+    }
+    public Item findItemByIndex(int index) {
+        // Check if the index is within the valid range of the inventory
+        if (index >= 0 && index < inventory.length) {
+            return inventory[index];
+        } else {
+            // Return null if the index is out of bounds
+            return null;
+        }
+    }
 }
