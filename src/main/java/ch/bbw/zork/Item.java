@@ -8,11 +8,12 @@ public class Item {
     private double weight;
     private String[] perks;
     private int hp;
+    private boolean hasStar;
 
     public Item() {
     }
 
-    public Item(String name, String description, double damage, int durability, double weight, String[] perks, int hp) {
+    public Item(String name, String description, double damage, int durability, double weight, String[] perks, int hp, boolean hasStar) {
         this.name = name;
         this.description = description;
         this.damage = damage;
@@ -20,68 +21,72 @@ public class Item {
         this.weight = weight;
         this.perks = perks;
         this.hp = hp;
+        this.hasStar = hasStar;
     }
 
     public String getName() {
         return name;
     }
 
-    public Item setName(String name) {
+    public void setName(String name) {
         this.name = name;
-        return this;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public Item setDescription(String description) {
+    public void setDescription(String description) {
         this.description = description;
-        return this;
     }
 
     public double getDamage() {
         return damage;
     }
 
-    public Item setDamage(double damage) {
+    public void setDamage(double damage) {
         this.damage = damage;
-        return this;
     }
 
     public int getDurability() {
         return durability;
     }
 
-    public Item setDurability(int durability) {
+    public void setDurability(int durability) {
         this.durability = durability;
-        return this;
     }
 
     public double getWeight() {
         return weight;
     }
 
-    public Item setWeight(double weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
-        return this;
     }
 
     public String[] getPerks() {
         return perks;
     }
 
-    public Item setPerks(String[] perks) {
+    public void setPerks(String[] perks) {
         this.perks = perks;
-        return this;
     }
 
     public int getHp() {
         return hp;
     }
 
-    public Item setHp(int hp) {
+    public void setHp(int hp) {
         this.hp = hp;
-        return this;
     }
+
+    public boolean isHasStar() {
+        return hasStar;
+    }
+
+    public void setHasStar(boolean hasStar) {
+        this.hasStar = hasStar;
+    }
+
+
 }
