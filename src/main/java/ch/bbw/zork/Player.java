@@ -9,6 +9,7 @@ public class Player {
     private int currentRoomId;
     private Item[] inventory;
 
+
     public int getHp() {
         return hp;
     }
@@ -88,4 +89,23 @@ public class Player {
             return null;
         }
     }
+    public void removeFromInventory(Item item) {
+        if (inventory != null) {
+            for (int i = 0; i < inventory.length; i++) {
+                if (inventory[i] == item) {
+                    // Create a new array with one less slot to remove the item
+                    Item[] newInventory = new Item[inventory.length - 1];
+                    for (int j = 0, k = 0; j < inventory.length; j++) {
+                        if (j != i) {
+                            newInventory[k] = inventory[j];
+                            k++;
+                        }
+                    }
+                    inventory = newInventory;
+                    break; // Item found and removed, exit the loop
+                }
+            }
+        }
+    }
+
 }
