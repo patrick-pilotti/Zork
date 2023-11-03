@@ -46,6 +46,10 @@ public class Player {
         return inventory;
     }
 
+    public void takeDamage(int damage){
+        hp = getHp() - damage;
+    }
+
     public void addToInventory(Item item) {
         if (inventory == null) {
             inventory = new Item[]{item};
@@ -93,7 +97,6 @@ public class Player {
         if (inventory != null) {
             for (int i = 0; i < inventory.length; i++) {
                 if (inventory[i] == item) {
-                    // Create a new array with one less slot to remove the item
                     Item[] newInventory = new Item[inventory.length - 1];
                     for (int j = 0, k = 0; j < inventory.length; j++) {
                         if (j != i) {
@@ -102,7 +105,7 @@ public class Player {
                         }
                     }
                     inventory = newInventory;
-                    break; // Item found and removed, exit the loop
+                    break;
                 }
             }
         }
