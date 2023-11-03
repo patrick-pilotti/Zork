@@ -8,6 +8,7 @@ public class Player {
     private int previousRoomId;
     private int currentRoomId;
     private Item[] inventory;
+    private int score;
 
 
     public int getHp() {
@@ -65,15 +66,6 @@ public class Player {
     }
 
 
-    public Player(int hp, String name, int previousRoomId, int currentRoomId, Item[] inventory) {
-        this.hp = hp;
-        this.name = name;
-        this.previousRoomId = previousRoomId;
-        this.currentRoomId = currentRoomId;
-        this.inventory = inventory;
-    }
-
-
     public Item findItemByName(String itemName) {
         if (inventory != null) {
             for (Item item : inventory) {
@@ -111,4 +103,24 @@ public class Player {
         }
     }
 
+    public void setInventory(Item[] inventory) {
+        this.inventory = inventory;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public Player(int hp, String name, int previousRoomId, int currentRoomId, Item[] inventory, int score) {
+        this.hp = hp;
+        this.name = name;
+        this.previousRoomId = previousRoomId;
+        this.currentRoomId = currentRoomId;
+        this.inventory = inventory;
+        this.score = score;
+    }
 }
