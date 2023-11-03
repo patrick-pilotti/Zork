@@ -55,9 +55,7 @@ public class Player {
         if (inventory == null) {
             inventory = new Item[]{item};
         } else {
-            // Check if the item is already in the inventory
             if (!Arrays.asList(inventory).contains(item)) {
-                // Create a new array with one more slot for the new item
                 Item[] newInventory = Arrays.copyOf(inventory, inventory.length + 1);
                 newInventory[inventory.length] = item;
                 inventory = newInventory;
@@ -70,18 +68,16 @@ public class Player {
         if (inventory != null) {
             for (Item item : inventory) {
                 if (item.getName().equalsIgnoreCase(itemName)) {
-                    return item; // Return the item if found by name (case-insensitive)
+                    return item;
                 }
             }
         }
-        return null; // Return null if the item is not found
+        return null;
     }
     public Item findItemByIndex(int index) {
-        // Check if the index is within the valid range of the inventory
         if (index >= 0 && index < inventory.length) {
             return inventory[index];
         } else {
-            // Return null if the index is out of bounds
             return null;
         }
     }
