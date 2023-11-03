@@ -6,15 +6,9 @@ public class Enemy {
     private int damage;
 
     private boolean isBoss;
+    private String Description;
 
     public Enemy() {
-    }
-
-    public Enemy(String name, int health, int damage, boolean isBoss) {
-        this.name = name;
-        this.health = health;
-        this.damage = damage;
-        this.isBoss = isBoss;
     }
 
     public String getName() {
@@ -48,4 +42,26 @@ public class Enemy {
     public void setBoss(boolean boss) {
         isBoss = boss;
     }
+    public void takeDamage(int damage){
+        health = getHealth() - damage;
+    }
+
+    public Enemy(String name, int health, int damage, boolean isBoss, String description) {
+        this.name = name;
+        this.health = health;
+        this.damage = damage;
+        this.isBoss = isBoss;
+        this.Description = description; // Initialize the description field correctly
+    }
+
+
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String Description) {
+        Description = Description;
+    }
+
+
 }
