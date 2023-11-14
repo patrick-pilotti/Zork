@@ -51,7 +51,7 @@ public class Enemy {
         this.health = health;
         this.damage = damage;
         this.isBoss = isBoss;
-        this.Description = description; // Initialize the description field correctly
+        this.Description = description;
     }
 
 
